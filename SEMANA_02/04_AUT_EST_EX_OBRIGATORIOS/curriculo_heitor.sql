@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS "experiencia" (
 	"id_cargo"	INTEGER,
 	"id_pessoa"	INTEGER,
 	PRIMARY KEY("id_exp" AUTOINCREMENT),
-	FOREIGN KEY("id_cargo") REFERENCES "cargo",
-	FOREIGN KEY("id_pessoa") REFERENCES "pessoa"
+	FOREIGN KEY("id_pessoa") REFERENCES "pessoa",
+	FOREIGN KEY("id_cargo") REFERENCES "cargo"
 );
 CREATE TABLE IF NOT EXISTS "formacao" (
 	"id_curso"	INTEGER NOT NULL,
