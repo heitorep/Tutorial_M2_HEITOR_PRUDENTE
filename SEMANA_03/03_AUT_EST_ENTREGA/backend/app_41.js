@@ -68,7 +68,7 @@ app.get('/atualizaPessoa', (req, res) => {
 app.post('/atualizaPessoa', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); 
-	sql = "UPDATE pessoa SET nome='" + req.body.nome + "', foto = '" + req.body.foto + "'  WHERE id_pessoa='" + req.body.id_pessoa + "'";
+	sql = "UPDATE pessoa SET nome='" + req.body.nome + "', foto ='" + req.body.foto + "' WHERE id_pessoa='" + req.body.id_pessoa+ "'";
 	console.log(sql);
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.run(sql, [],  err => {
