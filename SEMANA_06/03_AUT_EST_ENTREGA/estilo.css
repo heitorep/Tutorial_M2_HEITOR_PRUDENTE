@@ -1,0 +1,171 @@
+/* Estilos gerais para todos os tamanhos de tela */
+body {
+	background: #669bc2;
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Estilos para cabeçalho */
+  header {
+	background: rgba(142, 142, 142, 0.7);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 10px;
+	z-index: 999;
+  }
+  
+  #navbar-links {
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  #navbar-links a {
+	display: inline-flex;
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	text-decoration: none;
+	margin-left: 15px;
+	transition: color 0.3s ease;
+  }
+  
+  #navbar-links a:hover {
+	color: #dcdcdc;
+  }
+  
+  .container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 960px;
+	margin: 0 auto;
+  }
+  
+  h1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 20px;
+  }
+  
+  .caixaSobre,
+  .caixaFormacao,
+  .caixaExperiencia,
+  .caixaRealizacoes,
+  .caixaCargo {
+	background: #567f96;
+	box-shadow: 8px 10px 40px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 16px;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	
+  }
+
+  #nome{
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 50px;
+  }
+
+  img {
+	margin-top: 120px;
+	margin-left: 520px;
+  }
+  
+  button {
+	border: none;
+	color: #fff;
+	background-image: linear-gradient(30deg, #755527, #C29D67);
+	border-radius: 20px;
+	background-size: 100% auto;
+	font-family: inherit;
+	font-size: 17px;
+	padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+	background-position: right center;
+	background-size: 200% auto;
+	-webkit-animation: pulse 2s infinite;
+	animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+	0% {
+	 box-shadow: 0 0 0 0 #05bada66;
+	}
+   
+	70% {
+	 box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+	}
+   
+	100% {
+	 box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+	}
+   }
+  
+  /* Estilos para tablets */
+  @media screen and (max-width: 1024px) {
+	h1 {
+	  font-size: 30px;
+	}
+  
+	.container {
+	  padding-top: 20px;
+	}
+	
+	img {
+		margin-top: 100px;
+		margin-left: 340px;
+	  }
+
+	#navbar-links {
+	  justify-content: center;
+	  margin-bottom: 10px;
+	}
+  
+	#navbar-links a {
+	  margin-right: 10px;
+	  font-size: 16px;
+	}
+  }
+  
+  /* Estilos para celulares */
+  @media screen and (max-width: 767px) {
+	h1 {
+	  font-size: 30px;
+	}
+  
+	.container {
+	  padding-top: 20px;
+	}
+    
+	img {
+		margin-top: 240px;
+		margin-left: 140px;
+	  }
+
+	#navbar-links {
+	  flex-direction: column;
+	  align-items: center;
+	  margin-bottom: 10px;
+	}
+  
+	#navbar-links a {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	  font-size: 16px;
+	}
+  }
+  
